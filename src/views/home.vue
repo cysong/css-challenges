@@ -1,17 +1,28 @@
 <template>
   <div class="container">
-    <h2>100 days css challenges</h2>
+    <h2>100 css challenges</h2>
     <ul>
-      <li v-for="ch in challenges"><router-link :to="ch.path">{{ch.name}}</router-link></li>
+      <li v-for="ch in challenges">
+        <router-link :to="'/challenge/' + ch.path" :title="ch.meta.desc">{{ch.name}}</router-link>
+      </li>
+    </ul>
+    <h2>100 css demos</h2>
+    <ul>
+      <li v-for="demo in demos">
+        <router-link :to="'/demo/' + demo.path" :title="demo.meta.desc">{{demo.name}}</router-link>
+      </li>
     </ul>
   </div>
 </template>
 <script>
 import challenges from "../router/challenges";
+import demos from "../router/demos";
+
 export default {
   setup(){
     return {
-      challenges
+      challenges,
+      demos
     }
   }
 }
