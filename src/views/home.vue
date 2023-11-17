@@ -31,6 +31,9 @@ export default {
 .container {
   width:300px;
   margin: 0 auto;
+  white-space:nowrap;
+  padding: 0 5px;
+  overflow: hidden;
 }
 h2 {
   text-align: center;
@@ -49,12 +52,6 @@ li {
 li a {
   text-decoration: none;
   display: block;
-  width: 200px;
-
-  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
   transition: font-size 0.3s ease, background-color 0.3s ease;
 }
 </style>
