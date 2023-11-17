@@ -16,5 +16,11 @@ export default [
         path: '003',
         component: () => import('@/views/demos/003.vue'),
         meta: {desc: 'css typing animation demo'}
+    },
+    {
+        name: '004 Rainbow',
+        path: '004',
+        component: () => import('@/views/demos/004.vue'),
+        meta: {desc: 'a dynamic rainbow'}
     }
 ]
